@@ -1,0 +1,458 @@
+2026-04-29 19:58:50,170 [INFO] vm_genbi - Starting Bankruptcy application
+2026-04-29 19:58:50,171 [INFO] vm_genbi - === Streamlit session started ===
+2026-04-29 19:58:50,171 [INFO] vm_genbi - Conversation memory initialized
+2026-04-29 19:58:50,172 [INFO] vm_genbi - Loading database schema
+2026-04-29 20:02:42,023 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:02:42,024 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:02:42,024 [INFO] bankruptcy_genbi - Conversation memory initialized
+2026-04-29 20:02:42,024 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:06:25,458 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:06:25,458 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:06:25,491 [INFO] bankruptcy_genbi - Conversation memory initialized
+2026-04-29 20:06:25,492 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:06:37,772 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:06:37,778 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:06:37,779 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:06:37,779 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:06:37,883 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:06:37,883 [INFO] bankruptcy_genbi - New file detected | filename=notification2_synthesized_backup.csv
+2026-04-29 20:06:38,069 [INFO] bankruptcy_genbi - Detected 102 columns from uploaded_data table
+2026-04-29 20:06:38,073 [INFO] bankruptcy_genbi - Data saved to SQLite | filename=notification2_synthesized_backup.csv | rows=110 | columns=102
+2026-04-29 20:06:38,078 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:06:56,486 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:06:56,492 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:06:56,492 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:06:56,493 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:06:56,564 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:06:56,584 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:06:56,595 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=show me a year wise distribution of notifications
+2026-04-29 20:06:56,601 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:06:56,605 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=show me a year wise distribution of notifications
+2026-04-29 20:06:56,608 [INFO] bankruptcy_genbi - Generating SQL from user question: show me a year wise distribution of notifications
+2026-04-29 20:06:56,609 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9691
+2026-04-29 20:06:58,392 [INFO] config - Bedrock response received | elapsed_ms=1782.80 response_chars=200
+2026-04-29 20:06:58,395 [INFO] bankruptcy_genbi - SQL generated | length=113 | query=SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y
+2026-04-29 20:06:58,397 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:06:58,400 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6352
+2026-04-29 20:06:59,552 [INFO] config - Bedrock response received | elapsed_ms=1151.32 response_chars=18
+2026-04-29 20:06:59,555 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:06:59,557 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:06:59,558 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:06:59,559 [INFO] bankruptcy_genbi - Original SQL query: SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date)
+2026-04-29 20:06:59,560 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date)
+2026-04-29 20:06:59,563 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=14
+2026-04-29 20:06:59,565 [INFO] bankruptcy_genbi - Query executed successfully | rows=14
+2026-04-29 20:06:59,568 [INFO] bankruptcy_genbi - Generating auto-detected insights
+2026-04-29 20:06:59,581 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:07:01,550 [INFO] config - Bedrock response received | elapsed_ms=1927.54 response_chars=305
+2026-04-29 20:07:01,556 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:07:02,608 [INFO] config - Bedrock response received | elapsed_ms=1051.38 response_chars=5
+2026-04-29 20:07:02,994 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=49 | records=14 | history_length=1
+2026-04-29 20:07:02,995 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=14 | cache_size=1
+2026-04-29 20:09:16,372 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:09:16,375 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:09:16,375 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:09:16,376 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:09:16,453 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:09:16,472 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:09:16,496 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:09:18,206 [INFO] config - Bedrock response received | elapsed_ms=1710.50 response_chars=353
+2026-04-29 20:09:18,212 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:09:19,243 [INFO] config - Bedrock response received | elapsed_ms=1030.55 response_chars=5
+2026-04-29 20:09:19,527 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=how many years are there having count greater than 5
+2026-04-29 20:09:19,528 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:09:19,529 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=how many years are there having count greater than 5
+2026-04-29 20:09:19,530 [INFO] bankruptcy_genbi - Generating SQL from user question: how many years are there having count greater than 5
+2026-04-29 20:09:19,530 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9694
+2026-04-29 20:09:21,214 [INFO] config - Bedrock response received | elapsed_ms=1683.50 response_chars=225
+2026-04-29 20:09:21,216 [INFO] bankruptcy_genbi - SQL generated | length=133 | query=SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y
+2026-04-29 20:09:21,218 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:09:21,219 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6375
+2026-04-29 20:09:22,361 [INFO] config - Bedrock response received | elapsed_ms=1141.20 response_chars=18
+2026-04-29 20:09:22,363 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:09:22,366 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:09:22,367 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:09:22,369 [INFO] bankruptcy_genbi - Original SQL query: SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date) HAVING COUNT(*) > 5
+2026-04-29 20:09:22,369 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date) HAVING COUNT(*) > 5
+2026-04-29 20:09:22,372 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=10
+2026-04-29 20:09:22,375 [INFO] bankruptcy_genbi - Query executed successfully | rows=10
+2026-04-29 20:09:22,379 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=52 | records=10 | history_length=2
+2026-04-29 20:09:22,379 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=10 | cache_size=2
+2026-04-29 20:09:35,879 [INFO] bankruptcy_genbi - Follow-up questions toggle changed | enabled=True
+2026-04-29 20:09:35,882 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:09:35,885 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:09:35,885 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:09:35,886 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:09:35,996 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:09:36,010 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:09:36,084 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:09:38,003 [INFO] config - Bedrock response received | elapsed_ms=1908.10 response_chars=377
+2026-04-29 20:09:38,007 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:09:39,008 [INFO] config - Bedrock response received | elapsed_ms=1001.20 response_chars=5
+2026-04-29 20:10:00,863 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:10:00,875 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:10:00,876 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:10:00,877 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:10:00,990 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:10:01,002 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:10:01,021 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:10:02,829 [INFO] config - Bedrock response received | elapsed_ms=1807.90 response_chars=367
+2026-04-29 20:10:02,833 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:10:03,819 [INFO] config - Bedrock response received | elapsed_ms=986.13 response_chars=5
+2026-04-29 20:10:04,076 [INFO] bankruptcy_genbi - User query received | follow_up_mode=True | query=which  are the years having count between 5 and 9?
+2026-04-29 20:10:04,078 [INFO] bankruptcy_genbi - Processing as follow-up question
+2026-04-29 20:10:04,079 [INFO] bankruptcy_genbi - Processing question: which  are the years having count between 5 and 9?
+2026-04-29 20:10:04,080 [INFO] config - Using AWS Bedrock backend | model=anthropic.claude-3-haiku-20240307-v1:0 prompt_chars=502
+2026-04-29 20:10:05,469 [INFO] config - Bedrock response received | elapsed_ms=1389.11 response_chars=83
+2026-04-29 20:10:05,475 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=50 | records=0 | history_length=3
+2026-04-29 20:10:58,676 [INFO] bankruptcy_genbi - Follow-up questions toggle changed | enabled=False
+2026-04-29 20:10:58,678 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:10:58,683 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:10:58,683 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:10:58,684 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:10:58,817 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:10:58,832 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:10:58,852 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:11:00,602 [INFO] config - Bedrock response received | elapsed_ms=1749.48 response_chars=349
+2026-04-29 20:11:00,616 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:11:01,619 [INFO] config - Bedrock response received | elapsed_ms=1001.41 response_chars=5
+2026-04-29 20:11:08,217 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:11:08,223 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:11:08,223 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:11:08,224 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:11:08,360 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:11:08,376 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:11:08,399 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:11:10,304 [INFO] config - Bedrock response received | elapsed_ms=1904.61 response_chars=426
+2026-04-29 20:11:10,308 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:11:11,320 [INFO] config - Bedrock response received | elapsed_ms=1011.32 response_chars=5
+2026-04-29 20:11:11,608 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=how many years are there having count greater than 5
+2026-04-29 20:11:11,610 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:11:11,611 [INFO] bankruptcy_genbi - Query found in cache | query=how many years are there having count greater than 5
+2026-04-29 20:11:11,612 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=52 | records=10 | history_length=4
+2026-04-29 20:11:11,615 [INFO] bankruptcy_genbi - Cached query executed successfully | rows=10
+2026-04-29 20:11:38,168 [INFO] bankruptcy_genbi - Follow-up questions toggle changed | enabled=True
+2026-04-29 20:11:38,172 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:11:38,178 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:11:38,179 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:11:38,180 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:11:38,299 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:11:38,313 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:11:38,332 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:11:40,137 [INFO] config - Bedrock response received | elapsed_ms=1804.93 response_chars=364
+2026-04-29 20:11:40,141 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:11:41,152 [INFO] config - Bedrock response received | elapsed_ms=1010.34 response_chars=5
+2026-04-29 20:14:18,379 [INFO] bankruptcy_genbi - Follow-up questions toggle changed | enabled=False
+2026-04-29 20:14:18,383 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:14:18,390 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:14:18,391 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:14:18,394 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:14:18,548 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:14:18,566 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:14:18,587 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:14:20,410 [INFO] config - Bedrock response received | elapsed_ms=1823.02 response_chars=338
+2026-04-29 20:14:20,419 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:14:21,514 [INFO] config - Bedrock response received | elapsed_ms=1094.27 response_chars=5
+2026-04-29 20:14:25,824 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:14:25,827 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:14:25,828 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:14:25,829 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:14:25,946 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:14:25,965 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:14:25,999 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:14:28,086 [INFO] config - Bedrock response received | elapsed_ms=2086.51 response_chars=447
+2026-04-29 20:14:28,094 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:14:29,163 [INFO] config - Bedrock response received | elapsed_ms=1067.92 response_chars=5
+2026-04-29 20:14:29,458 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=Show me distribution of counts across years using pie chart
+2026-04-29 20:14:29,460 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:14:29,461 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=Show me distribution of counts across years using pie chart
+2026-04-29 20:14:29,461 [INFO] bankruptcy_genbi - Generating SQL from user question: Show me distribution of counts across years using pie chart
+2026-04-29 20:14:29,462 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9701
+2026-04-29 20:14:31,306 [INFO] config - Bedrock response received | elapsed_ms=1843.10 response_chars=206
+2026-04-29 20:14:31,307 [INFO] bankruptcy_genbi - SQL generated | length=113 | query=SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y
+2026-04-29 20:14:31,308 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:14:31,309 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6362
+2026-04-29 20:14:32,455 [INFO] config - Bedrock response received | elapsed_ms=1145.49 response_chars=18
+2026-04-29 20:14:32,456 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:14:32,458 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:14:32,459 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:14:32,460 [INFO] bankruptcy_genbi - Original SQL query: SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date)
+2026-04-29 20:14:32,460 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT strftime('%Y', Open_date) AS year, COUNT(*) AS count FROM uploaded_data GROUP BY strftime('%Y', Open_date)
+2026-04-29 20:14:32,463 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=14
+2026-04-29 20:14:32,464 [INFO] bankruptcy_genbi - Query executed successfully | rows=14
+2026-04-29 20:14:32,468 [INFO] bankruptcy_genbi - Generating insights with pie chart
+2026-04-29 20:14:32,480 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:14:34,410 [INFO] config - Bedrock response received | elapsed_ms=1930.22 response_chars=416
+2026-04-29 20:14:34,874 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=59 | records=14 | history_length=5
+2026-04-29 20:14:34,874 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=14 | cache_size=3
+2026-04-29 20:17:34,507 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:17:34,511 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:17:34,511 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:17:34,511 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:17:34,658 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:17:34,674 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:17:34,694 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:17:36,457 [INFO] config - Bedrock response received | elapsed_ms=1762.42 response_chars=356
+2026-04-29 20:17:36,473 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:17:37,498 [INFO] config - Bedrock response received | elapsed_ms=1021.47 response_chars=5
+2026-04-29 20:17:37,820 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:17:39,617 [INFO] config - Bedrock response received | elapsed_ms=1796.73 response_chars=367
+2026-04-29 20:17:39,989 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=can you add column to the table
+2026-04-29 20:17:39,990 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:17:39,991 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=can you add column to the table
+2026-04-29 20:17:39,992 [INFO] bankruptcy_genbi - Generating SQL from user question: can you add column to the table
+2026-04-29 20:17:39,992 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9673
+2026-04-29 20:17:41,480 [INFO] config - Bedrock response received | elapsed_ms=1486.75 response_chars=141
+2026-04-29 20:17:41,483 [INFO] bankruptcy_genbi - SQL generated | length=68 | query=SELECT * FROM uploaded_data WHERE strftime('%Y', Open_date) = '2024'
+2026-04-29 20:17:41,487 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:17:41,490 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6289
+2026-04-29 20:17:42,651 [INFO] config - Bedrock response received | elapsed_ms=1160.09 response_chars=18
+2026-04-29 20:17:42,652 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:17:42,654 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:17:42,655 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:17:42,656 [INFO] bankruptcy_genbi - Original SQL query: SELECT * FROM uploaded_data WHERE strftime('%Y', Open_date) = '2024'
+2026-04-29 20:17:42,656 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT * FROM uploaded_data WHERE strftime('%Y', Open_date) = '2024'
+2026-04-29 20:17:42,666 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=0
+2026-04-29 20:17:42,666 [WARNING] bankruptcy_genbi - Query returned 0 rows. Showing sample data and debug info...
+2026-04-29 20:17:42,677 [INFO] bankruptcy_genbi - Sample data from database:
+     Ac_no   Open_date First_name middle_name Last_name  ...  Before_open      SASF Active_Status  Disposition_text POC_bar_date
+0  1000001  2015-04-12    Michael           J     Smith  ...            N  Standard          Open  Case in Progress   2022-11-13
+1  1000002  2012-11-30     Robert           M     Brown  ...            N  Standard          Open  Case in Progress   2021-08-18
+2  1000003  2018-02-14   Patricia           A     Davis  ...            N  Standard          Open  Case in Progress   2023-04-10
+3  1000004  2010-06-25       John           K    Miller  ...            N  Standard          Open  Case in Progress   2021-12-04
+4  1000005  2019-09-18       Jane           L    Garcia  ...            N  Standard          Open  Case in Progress   2022-06-13
+
+[5 rows x 102 columns]
+2026-04-29 20:17:42,942 [INFO] bankruptcy_genbi - Query executed but returned 0 rows
+2026-04-29 20:17:42,943 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=31 | records=0 | history_length=6
+2026-04-29 20:18:18,729 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:18:18,732 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:18:18,733 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:18:18,734 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:18:18,823 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:18:18,844 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:18:18,874 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:18:20,708 [INFO] config - Bedrock response received | elapsed_ms=1833.21 response_chars=376
+2026-04-29 20:18:20,721 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:18:21,681 [INFO] config - Bedrock response received | elapsed_ms=957.78 response_chars=5
+2026-04-29 20:18:22,054 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:18:23,828 [INFO] config - Bedrock response received | elapsed_ms=1773.61 response_chars=374
+2026-04-29 20:18:24,252 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=can you add column "Genai_status" to the table
+2026-04-29 20:18:24,253 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:18:24,254 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=can you add column "Genai_status" to the table
+2026-04-29 20:18:24,255 [INFO] bankruptcy_genbi - Generating SQL from user question: can you add column "Genai_status" to the table
+2026-04-29 20:18:24,256 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9688
+2026-04-29 20:18:25,644 [INFO] config - Bedrock response received | elapsed_ms=1388.19 response_chars=109
+2026-04-29 20:18:25,646 [INFO] bankruptcy_genbi - SQL generated | length=55 | query=ALTER TABLE uploaded_data ADD COLUMN Genai_status TEXT;
+2026-04-29 20:18:25,647 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:18:25,648 [WARNING] bankruptcy_genbi - Blocked DDL operation: ALTER TABLE uploaded_data ADD COLUMN Genai_status TEXT;
+2026-04-29 20:18:25,650 [ERROR] bankruptcy_genbi - SQL validation failed with no repair possible: SQL validation failed and auto-repair unsuccessful: DDL queries are not allowed. Only SELECT queries are permitted.
+2026-04-29 20:18:25,651 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=46 | records=0 | history_length=7
+2026-04-29 20:20:19,502 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:20:19,508 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:20:19,509 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:20:19,509 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:20:19,646 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:20:19,660 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:20:19,678 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:20:21,444 [INFO] config - Bedrock response received | elapsed_ms=1765.61 response_chars=307
+2026-04-29 20:20:21,450 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:20:22,534 [INFO] config - Bedrock response received | elapsed_ms=1083.78 response_chars=5
+2026-04-29 20:20:22,840 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:20:24,651 [INFO] config - Bedrock response received | elapsed_ms=1810.08 response_chars=370
+2026-04-29 20:20:25,006 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=delete 100 rows from the table
+2026-04-29 20:20:25,007 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:20:25,007 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=delete 100 rows from the table
+2026-04-29 20:20:25,008 [INFO] bankruptcy_genbi - Generating SQL from user question: delete 100 rows from the table
+2026-04-29 20:20:25,009 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9672
+2026-04-29 20:20:26,375 [INFO] config - Bedrock response received | elapsed_ms=1365.36 response_chars=89
+2026-04-29 20:20:26,378 [INFO] bankruptcy_genbi - SQL generated | length=35 | query=DELETE FROM uploaded_data LIMIT 100
+2026-04-29 20:20:26,380 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:20:26,382 [WARNING] bankruptcy_genbi - Blocked DML operation: DELETE FROM uploaded_data LIMIT 100
+2026-04-29 20:20:26,385 [ERROR] bankruptcy_genbi - SQL validation failed with no repair possible: SQL validation failed and auto-repair unsuccessful: DML queries are not allowed. Only SELECT queries are permitted.
+2026-04-29 20:20:26,388 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=30 | records=0 | history_length=8
+2026-04-29 20:25:04,184 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:25:04,190 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:25:04,190 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:25:04,191 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:25:04,360 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:25:04,377 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:25:04,398 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:25:06,196 [INFO] config - Bedrock response received | elapsed_ms=1797.04 response_chars=356
+2026-04-29 20:25:06,200 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:25:07,232 [INFO] config - Bedrock response received | elapsed_ms=1030.83 response_chars=5
+2026-04-29 20:25:07,549 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:25:09,679 [INFO] config - Bedrock response received | elapsed_ms=2130.26 response_chars=358
+2026-04-29 20:25:10,153 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=Get me the total match between 2500 to 3000
+2026-04-29 20:25:10,154 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:25:10,156 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=Get me the total match between 2500 to 3000
+2026-04-29 20:25:10,158 [INFO] bankruptcy_genbi - Generating SQL from user question: Get me the total match between 2500 to 3000
+2026-04-29 20:25:10,158 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9685
+2026-04-29 20:25:11,903 [INFO] config - Bedrock response received | elapsed_ms=1743.94 response_chars=162
+2026-04-29 20:25:11,906 [INFO] bankruptcy_genbi - SQL generated | length=81 | query=SELECT * FROM uploaded_data WHERE Open_date BETWEEN '2500-01-01' AND '3000-01-01'
+2026-04-29 20:25:11,908 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:25:11,910 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6314
+2026-04-29 20:25:13,070 [INFO] config - Bedrock response received | elapsed_ms=1159.80 response_chars=18
+2026-04-29 20:25:13,071 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:25:13,073 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:25:13,073 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:25:13,074 [INFO] bankruptcy_genbi - Original SQL query: SELECT * FROM uploaded_data WHERE Open_date BETWEEN '2500-01-01' AND '3000-01-01'
+2026-04-29 20:25:13,075 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT * FROM uploaded_data WHERE Open_date BETWEEN '2500-01-01' AND '3000-01-01'
+2026-04-29 20:25:13,082 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=0
+2026-04-29 20:25:13,083 [WARNING] bankruptcy_genbi - Query returned 0 rows. Showing sample data and debug info...
+2026-04-29 20:25:13,095 [INFO] bankruptcy_genbi - Sample data from database:
+     Ac_no   Open_date First_name middle_name Last_name  ...  Before_open      SASF Active_Status  Disposition_text POC_bar_date
+0  1000001  2015-04-12    Michael           J     Smith  ...            N  Standard          Open  Case in Progress   2022-11-13
+1  1000002  2012-11-30     Robert           M     Brown  ...            N  Standard          Open  Case in Progress   2021-08-18
+2  1000003  2018-02-14   Patricia           A     Davis  ...            N  Standard          Open  Case in Progress   2023-04-10
+3  1000004  2010-06-25       John           K    Miller  ...            N  Standard          Open  Case in Progress   2021-12-04
+4  1000005  2019-09-18       Jane           L    Garcia  ...            N  Standard          Open  Case in Progress   2022-06-13
+
+[5 rows x 102 columns]
+2026-04-29 20:25:13,330 [INFO] bankruptcy_genbi - Query executed but returned 0 rows
+2026-04-29 20:25:13,331 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=43 | records=0 | history_length=9
+2026-04-29 20:26:28,635 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:26:28,639 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:26:28,639 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:26:28,639 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:26:28,757 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:26:28,775 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:26:28,802 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:26:30,707 [INFO] config - Bedrock response received | elapsed_ms=1904.88 response_chars=392
+2026-04-29 20:26:30,712 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:26:31,733 [INFO] config - Bedrock response received | elapsed_ms=1020.65 response_chars=5
+2026-04-29 20:26:32,051 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:26:33,956 [INFO] config - Bedrock response received | elapsed_ms=1904.16 response_chars=385
+2026-04-29 20:26:34,302 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=Get me the total match score  between 50 to 100
+2026-04-29 20:26:34,304 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:26:34,305 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=Get me the total match score  between 50 to 100
+2026-04-29 20:26:34,306 [INFO] bankruptcy_genbi - Generating SQL from user question: Get me the total match score  between 50 to 100
+2026-04-29 20:26:34,307 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9689
+2026-04-29 20:26:35,890 [INFO] config - Bedrock response received | elapsed_ms=1582.64 response_chars=155
+2026-04-29 20:26:35,891 [INFO] bankruptcy_genbi - SQL generated | length=74 | query=SELECT match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:26:35,892 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:26:35,894 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6311
+2026-04-29 20:26:37,071 [INFO] config - Bedrock response received | elapsed_ms=1176.48 response_chars=18
+2026-04-29 20:26:37,072 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:26:37,074 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:26:37,074 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:26:37,076 [INFO] bankruptcy_genbi - Original SQL query: SELECT match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:26:37,076 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:26:37,079 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=110
+2026-04-29 20:26:37,081 [INFO] bankruptcy_genbi - Query executed successfully | rows=110
+2026-04-29 20:26:37,084 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=47 | records=110 | history_length=10
+2026-04-29 20:26:37,085 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=110 | cache_size=4
+2026-04-29 20:28:15,595 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:28:15,601 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:28:15,601 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:28:15,602 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:28:15,758 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:28:15,773 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:28:15,794 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:28:17,437 [INFO] config - Bedrock response received | elapsed_ms=1642.15 response_chars=263
+2026-04-29 20:28:17,440 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:28:18,439 [INFO] config - Bedrock response received | elapsed_ms=998.82 response_chars=5
+2026-04-29 20:28:18,783 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:28:20,650 [INFO] config - Bedrock response received | elapsed_ms=1867.44 response_chars=383
+2026-04-29 20:28:21,067 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=Get me account number whose  the total match score between 50 to 100
+2026-04-29 20:28:21,069 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:28:21,070 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=Get me account number whose  the total match score between 50 to 100
+2026-04-29 20:28:21,071 [INFO] bankruptcy_genbi - Generating SQL from user question: Get me account number whose  the total match score between 50 to 100
+2026-04-29 20:28:21,071 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9710
+2026-04-29 20:28:22,622 [INFO] config - Bedrock response received | elapsed_ms=1549.57 response_chars=149
+2026-04-29 20:28:22,625 [INFO] bankruptcy_genbi - SQL generated | length=68 | query=SELECT Ac_no FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:28:22,626 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:28:22,628 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6326
+2026-04-29 20:28:23,807 [INFO] config - Bedrock response received | elapsed_ms=1178.81 response_chars=18
+2026-04-29 20:28:23,809 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:28:23,810 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:28:23,811 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:28:23,812 [INFO] bankruptcy_genbi - Original SQL query: SELECT Ac_no FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:28:23,813 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT Ac_no FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:28:23,816 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=110
+2026-04-29 20:28:23,818 [INFO] bankruptcy_genbi - Query executed successfully | rows=110
+2026-04-29 20:28:23,822 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=68 | records=110 | history_length=11
+2026-04-29 20:28:23,823 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=110 | cache_size=5
+2026-04-29 20:28:44,645 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:28:44,649 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:28:44,650 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:28:44,651 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:28:44,778 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:28:44,797 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:28:44,819 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:28:46,653 [INFO] config - Bedrock response received | elapsed_ms=1834.17 response_chars=383
+2026-04-29 20:28:46,667 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:28:47,718 [INFO] config - Bedrock response received | elapsed_ms=1049.49 response_chars=5
+2026-04-29 20:28:48,070 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:28:49,876 [INFO] config - Bedrock response received | elapsed_ms=1805.80 response_chars=383
+2026-04-29 20:29:00,960 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:29:00,965 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:29:00,966 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:29:00,967 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:29:01,100 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:29:01,117 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:29:01,140 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:29:02,912 [INFO] config - Bedrock response received | elapsed_ms=1771.72 response_chars=430
+2026-04-29 20:29:02,921 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:29:03,951 [INFO] config - Bedrock response received | elapsed_ms=1029.50 response_chars=5
+2026-04-29 20:29:04,281 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:29:06,173 [INFO] config - Bedrock response received | elapsed_ms=1891.58 response_chars=383
+2026-04-29 20:29:06,530 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=Get me account number and respective score whose the total match score between 50 to 100
+2026-04-29 20:29:06,531 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:29:06,532 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=Get me account number and respective score whose the total match score between 50 to 100
+2026-04-29 20:29:06,533 [INFO] bankruptcy_genbi - Generating SQL from user question: Get me account number and respective score whose the total match score between 50 to 100
+2026-04-29 20:29:06,534 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9730
+2026-04-29 20:29:08,049 [INFO] config - Bedrock response received | elapsed_ms=1514.53 response_chars=164
+2026-04-29 20:29:08,051 [INFO] bankruptcy_genbi - SQL generated | length=81 | query=SELECT Ac_no, match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:29:08,052 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:29:08,053 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6359
+2026-04-29 20:29:09,174 [INFO] config - Bedrock response received | elapsed_ms=1120.71 response_chars=18
+2026-04-29 20:29:09,177 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:29:09,178 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:29:09,180 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:29:09,181 [INFO] bankruptcy_genbi - Original SQL query: SELECT Ac_no, match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:29:09,182 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT Ac_no, match_score FROM uploaded_data WHERE match_score BETWEEN 50 AND 100
+2026-04-29 20:29:09,187 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=110
+2026-04-29 20:29:09,189 [INFO] bankruptcy_genbi - Query executed successfully | rows=110
+2026-04-29 20:29:09,193 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=88 | records=110 | history_length=11
+2026-04-29 20:29:09,194 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=110 | cache_size=6
+2026-04-29 20:31:10,646 [WARNING] dotenv.main - python-dotenv could not parse statement starting at line 21
+2026-04-29 20:31:10,651 [INFO] bankruptcy_genbi - Starting Bankruptcy application
+2026-04-29 20:31:10,652 [INFO] bankruptcy_genbi - === Streamlit session started ===
+2026-04-29 20:31:10,652 [INFO] bankruptcy_genbi - Loading database schema
+2026-04-29 20:31:10,766 [INFO] bankruptcy_genbi - CSV loaded and cleaned | filename=notification2_synthesized_backup.csv | shape=(110, 102)
+2026-04-29 20:31:10,782 [INFO] bankruptcy_genbi - Database contains 110 records
+2026-04-29 20:31:10,810 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:31:12,733 [INFO] config - Bedrock response received | elapsed_ms=1922.81 response_chars=370
+2026-04-29 20:31:12,743 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=929
+2026-04-29 20:31:13,929 [INFO] config - Bedrock response received | elapsed_ms=1185.31 response_chars=5
+2026-04-29 20:31:14,260 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=941
+2026-04-29 20:31:16,050 [INFO] config - Bedrock response received | elapsed_ms=1789.26 response_chars=327
+2026-04-29 20:31:16,412 [INFO] bankruptcy_genbi - User query received | follow_up_mode=False | query=total number of notifications sent for  2022?
+2026-04-29 20:31:16,413 [INFO] bankruptcy_genbi - Processing as standard query
+2026-04-29 20:31:16,414 [INFO] bankruptcy_genbi - Starting SQL generation workflow | query=total number of notifications sent for  2022?
+2026-04-29 20:31:16,414 [INFO] bankruptcy_genbi - Generating SQL from user question: total number of notifications sent for  2022?
+2026-04-29 20:31:16,415 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=9687
+2026-04-29 20:31:17,959 [INFO] config - Bedrock response received | elapsed_ms=1544.24 response_chars=161
+2026-04-29 20:31:17,961 [INFO] bankruptcy_genbi - SQL generated | length=107 | query=SELECT COUNT(*) FROM uploaded_data WHERE strftime('%Y', Open_date) = '2022' AND notification_no IS N
+2026-04-29 20:31:17,962 [INFO] bankruptcy_genbi - Validating generated SQL
+2026-04-29 20:31:17,963 [INFO] config - Using AWS Bedrock backend | model=meta.llama3-8b-instruct-v1:0 prompt_chars=6342
+2026-04-29 20:31:19,127 [INFO] config - Bedrock response received | elapsed_ms=1163.52 response_chars=18
+2026-04-29 20:31:19,130 [INFO] bankruptcy_genbi - SQL Validation Response:
+{"VALID": "YES"}
+2026-04-29 20:31:19,132 [INFO] bankruptcy_genbi - SQL validation passed
+2026-04-29 20:31:19,134 [INFO] bankruptcy_genbi - Executing SQL query
+2026-04-29 20:31:19,134 [INFO] bankruptcy_genbi - Original SQL query: SELECT COUNT(*) FROM uploaded_data WHERE strftime('%Y', Open_date) = '2022' AND notification_no IS NOT NULL
+2026-04-29 20:31:19,135 [INFO] bankruptcy_genbi - Executing SQL query (after cleanup): SELECT COUNT(*) FROM uploaded_data WHERE strftime('%Y', Open_date) = '2022' AND notification_no IS NOT NULL
+2026-04-29 20:31:19,137 [INFO] bankruptcy_genbi - SQL query executed successfully | rows=1
+2026-04-29 20:31:19,138 [INFO] bankruptcy_genbi - Query executed successfully | rows=1
+2026-04-29 20:31:19,140 [INFO] bankruptcy_genbi - Conversation memory appended | query_length=45 | records=1 | history_length=11
+2026-04-29 20:31:19,141 [INFO] bankruptcy_genbi - Query execution completed and cached | rows=1 | cache_size=7

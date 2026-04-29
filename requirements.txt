@@ -1,0 +1,13 @@
+streamlit
+traceback2
+pandas
+pypi-json
+openai
+python-dotenv
+matplotlib
+seaborn
+plotly
+ollama
+pysqlite3
+boto3
+python-dotenv
